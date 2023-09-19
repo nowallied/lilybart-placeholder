@@ -1,0 +1,36 @@
+@media all and (min-width: 992px){
+	.offcanvas,
+	.body-inactive,
+	.toggle{
+		display: none !important;
+	}
+
+}
+.offcanvas{
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+    padding: 0;
+	transform: translateX(100%);
+	transition: all 0.35s ease-out;
+	background: #ffffff;
+	width:320px;
+	z-index: 100;
+}
+@media all and (max-width: 767px){
+    .offcanvas{
+        width: 100%;
+    }
+}
+.offcanvas.show-offcanvas{
+	transform: translateX(0);
+}
+.body-inactive{
+	z-index: 100;
+	background-color: rgba(0,0,0,0.3);
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
